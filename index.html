@@ -1,0 +1,962 @@
+<!DOCTYPE HTML>
+<html>
+    <head> 
+        <title>Homepage</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, ser-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" /> <!-- Gerir bakgrunninn bleikan -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5VlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <body>
+    
+    <audio autoplay loop>
+        <source src="lo_fi_merkelwave.mp3">
+    </audio>
+
+    <div>
+        <audio autoplay loop>
+            <source src="lo_fi_merkelwave.mp3">
+        </audio> 
+    </div>
+    <!-- Það sem birtist á síðunni -->
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+        <!-- Stillir breidd síðunnar svo hún passi á skjá -->
+        <div id="wrapper">
+                <nav id="nav">
+                    <a href="#" class="icon solid fa-home"><span>Heim</span></a>
+                    <a href="#contact" class="icon solid fa-folder"><span>Verkefni</span></a>
+                    <a href="#work" class="icon solid fa-user"><span>Um mig</span></a>
+                    <a href="https://github.com/dagur98/Verkefni-1" class="fab fa-github"><span>GitHub</span></a>
+                </nav>
+            <!-- \Nav -->
+
+            <!-- Main -->
+            <!-- undirsíður á síðunni -->
+            <div id="main">
+
+                <!-- Me -->
+                    <article id="home" class="panel intro">
+                        <!-- Header -->
+                        <header>
+                            <div id="contact-info" class="vcard">
+                                
+                                <!-- Microformats! -->
+                            
+                                <h1 class="fn">Tölvustudd framleiðsla</h1>
+                            
+                            </div>
+ 
+                            <div id="objective">
+                            
+                            <br />
+
+                            <p>
+                                VÉL608G
+                            </p>
+                            
+                            <!--
+                            <h1>Tölvustudd framleiðsla</h1> 
+                            
+                            <br/>
+
+                            <p>VÉL608G</p>
+                            -->
+                            
+                        </header>
+                        
+                        <!-- href="#work" -->
+                        <a class="png">
+                            <img src="images/Myndir/edi-manufacturing.jpg" style="width: 100%; display: block; margin-right: 50%; opacity: 90%;" />
+                        </a>
+                    </article>
+
+                <!-- Contact -->
+                    <article id="contact" class="panel">
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                            <style>
+                                body {
+                                font-family: Arial;
+                                margin: 0;
+                                }
+
+                                * {
+                                box-sizing: border-box;
+                                }
+
+                                img {
+                                vertical-align: middle;
+                                }
+
+                                /* Position the image container (needed to position the left and right arrows) */
+                                .container {
+                                position: relative;
+                                }
+
+                                /* Hide the images by default */
+                                .mySlides {
+                                display: none;
+                                text-align: center;
+                                }
+
+                                /* Add a pointer when hovering over the thumbnail images */
+                                .cursor {
+                                cursor: pointer;
+                                }
+
+                                /* Next & previous buttons */
+                                .prev,
+                                .next {
+                                cursor: pointer;
+                                position: fixed;
+                                top: calc(65%);
+                                padding: 12px;
+                                margin-top: 20px;
+                                color: rgb(116, 116, 116);
+                                font-weight: bold;
+                                font-size: 20px;
+                                border-radius: 0 3px 3px 0;
+                                user-select: none;
+                                -webkit-user-select: none;
+                                margin: auto;
+                                }
+
+                                
+
+                                /* Position the "next button" to the right */
+                                .next {
+                                
+                                left: calc(75%);
+                                border-radius: 2px 0 0 2px;
+                                }
+
+                                /* On hover, add a black background color with a little bit see-through */
+                                .prev:hover,
+                                .next:hover {
+                                background-color: rgba(0, 0, 0, 0);
+                                }
+
+                                /* Number text (1/3 etc) */
+                                .numbertext {
+                                color: #00000073;
+                                font-size: 16px;
+                                padding: 8px 12px;
+                                position: relative;
+                                top: 0;
+                                }
+
+                                /* Container for image text */
+                                .caption-container {
+                                text-align: center;
+                                background-color: rgb(255, 0, 0);
+                                padding: 2px 2px;
+                                color: rgb(0, 0, 0);
+                                }
+
+                                .row:after {
+                                content: "";
+                                display: table;
+                                clear: both;
+                                }
+
+                                /* Six columns side by side */
+                                .column {
+                                float: left;
+                                width: 16.66%;
+                                }
+
+                                /* Add a transparency effect for thumnbail images */
+                                .demo {
+                                opacity: 0.2;
+                                }
+
+                                .active,
+                                .demo:hover {
+                                opacity: 1;
+                                }
+
+                                #text {
+                                z-index: 100;
+                                position: relative;
+                                color: rgb(0, 0, 0);
+                                font-size: 30px;
+                                font-weight: bold;
+                                left: 0px;
+                                top: -30%;
+                                transform: rotate(0deg);
+                                text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+                                user-select: none;
+                                }
+                            </style>
+                            <body>
+                                <div class="row">
+                                    
+                                    <div class="column">
+                                        <a><img class="demo cursor" src="images/Verkefni 1 myndir/html.png" style="width:100%" onclick="currentSlide(1)" alt="Project 1"></a>
+                                        <p id="text"></p>
+                                    </div>
+
+                                    <div class="column">
+                                        <img class="demo cursor" src="images/Verkefni 2 myndir/toler.png" style="width:100%" onclick="currentSlide(2)" alt="Project 2">
+                                        <p id="text"></p>
+                                    </div>
+
+                                    <div class="column">
+                                        <img class="demo cursor" src="images/Verkefni 3 myndir/laser.png" style="width:100%" onclick="currentSlide(3)" alt="Project 3">
+                                        <p id="text"></p>
+                                    </div>
+
+                                    <div class="column">
+                                        <img class="demo cursor" src="images/Verkefni 4 myndir/toler.png" style="width:100%" onclick="currentSlide(4)" alt="Project 4">
+                                        <p id="text"></p>
+                                    </div>
+
+                                    <div class="column">
+                                        <img class="demo cursor" src="images/Verkefni 5 myndir/3d.png" style="width:100%" onclick="currentSlide(5)" alt="Project 5">
+                                        <p id="text"></p>
+                                    </div>    
+
+                                    <div class="column">
+                                        <img class="demo cursor" src="images/Verkefni 6 myndir/drill.jpg" style="width:100%" onclick="currentSlide(6)" alt="Project 6">
+                                        <p id="text"></p>
+                                    </div>
+                                </div>
+                                <!--
+                                <div class="caption-container">
+                                    <p id="caption"></p>
+                                    <caption>caption</caption>
+                                </div>
+                                -->
+                                <div class="container">
+                                    
+                                    <div class="mySlides">
+                                        
+                                        <div class="numbertext">Verkefni 1</div>
+
+                                        <h3 style="text-align: center; line-height: 300%;">Að búa til vefsíðu með HTML</h3><br/>
+
+                                        <p style="padding-left: 10%; word-wrap: break-word; width: 90%;">
+                                            Fyrir þetta verkefni átti að búa til heimasíðu með HTML5. 
+                                            <br/>
+                                            Kröfur verkefnisins voru þær að vefsíðan varð að vera skilvirk og auðveld í notkun. Hún átti að vera búin til af mér og aðgengileg hverjum sem er.
+                                            <br/>
+                                            Áður en ég gat hafist handa varð ég að ákveða hvaða forrit ég ætti að nota.
+                                            <br/>
+                                            Þar sem ég forrita að mestu í <a class="email" href="https://code.visualstudio.com/">Visual Studio Code</a> vildi ég halda því áfram svo ég sótti mér viðbótina <a class="email" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live Preview</a>. Viðbótin leyfir Visual Studio Code að forrita í HTML, CSS og Javascript.
+                                            <br/>
+                                            <br/>
+                                                <a>
+                                                    <img src="images/Verkefni 1 myndir/vscode.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                                </a>
+                                            <br/>
+                                            Þar næst sótti ég <a class="email" href="https://git-scm.com/">Git</a> sem leyfir mér að hlaða síðunni á netið.
+                                            <br/>
+                                            <br/>
+                                                <a>
+                                                    <img src="images/Verkefni 1 myndir/git.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                                </a>
+                                            <br/>
+                                            Til þess að hýsa síðuna á netinu notaði ég <a class="email" href="https://github.com/">GitHub</a>  sem býður upp á ókeypis hýsingu fyrir litlar vefsíður.
+                                            <br/>
+                                            <br/>
+                                                <a>
+                                                    <img src="images/Verkefni 1 myndir/github.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                                </a>
+                                            <br/>
+                                            Til þess að hlaða síðunni á GitHub var annars vegar hægt að nota <a class="email" href="https://www.atlassian.com/git/tutorials/git-bash">Git Bash</a> en þar sem það virkaði illa sótti ég <a class="email" href="https://desktop.github.com/">GitHub Desktop</a> forritið. Þetta forrit er mun notandavænna og þægilegra í notkun.
+                                            <br/>
+                                            <br/>
+                                                <a>
+                                                    <img src="images/Verkefni 1 myndir/github desktop.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                                </a>
+                                            <br/>
+                                            Þegar búið er að sækja GitHub Desktop þá þarf að skrá sig inn eða búa til aðgang á <a class="email" href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home">GitHub</a>.
+                                            <br/>
+                                            <br/>
+                                                <a>
+                                                    <img src="images/Verkefni 1 myndir/sign in github desktop.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                                </a>
+                                            <br/>
+                                            Þegar búið er að skrá sig inn á GitHub Desktop skal velja "Create a New Repository on your hard drive...". Eftir að búið er að fylla í reitina skal velja "Create repository" sem býr til möppu þar sem innihald síðunnar verður geymt. Þessi mappa tengist GitHub í gegnum netið.
+                                            <br/>
+                                            <br/>
+                                                <a>
+                                                    <img src="images/Verkefni 1 myndir/create repository.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                                </a>
+                                            <br/>
+                                            Að því loknu er hægt að byrja á vefsíðugerðinni.
+                                            <br/>
+                                            Þar sem ég hef lítið unnið með HTML fyrir þetta verkefni byrjaði ég á að sækja sniðmát af vefsíðunni <a class="email" href="https://html5up.net/">HTML5UP</a>. Þessi vefsíða hýsir ókeypis sniðmát sem hægt er að breyta eftir þörfum.
+                                            <br/>
+                                            <br/>
+                                                <a>
+                                                    <img src="images/Verkefni 1 myndir/html5up.jpg" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                                </a>
+                                            <br/>
+                                            Á HTML5UP fann ég sniðmátið <a class="email" href="https://html5up.net/astral">Astral</a> sem ég hlóð niður og byrjaði að breyta eftir mínum þörfum.
+                                            <br/>
+                                            <br/>
+                                                <a>
+                                                    <img src="images/Verkefni 1 myndir/astral.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                                </a>
+                                            <br/>
+                                            Eftir að hafa hlaðið niður sniðmátinu fékk ég .zip skrá sem ég færði í möppuna sem ég hafði áður búið til. Þegar skráin var komin þangað valdi ég "extract here" sem hlóð niður öllu því sem ég þurfti til að byrja á heimasíðunni.
+                                            <br/>
+                                            Því næst hægri smellti þá á index.HTML skránna og valdi "Open with Visual Studio Code".
+                                            <br/>
+                                            <br/>
+                                                <a>
+                                                    <img src="images/Verkefni 1 myndir/vscode_template.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                                </a>
+                                            <br/>
+                                            Með því að nota <a class="email" href="https://www.w3schools.com/howto/howto_css_modal_images.asp">Modal myndir</a>  gat ég búið til <a class="email" href="https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp">Slideshow gallery</a>  sem leyfði mér að skipta þægilega á milli verkefna innan sömu síðunnar.
+                                            <br/>
+                                            Myndirnar efst á síðunni komu frá <a class="email" href="https://fontawesome.com/">Font Awesome</a> sem býður upp á hundruði mynda mynda eins og t.d. mappan eða GitHub myndin efst sýnir. Kosturinn við Font Awesome myndirnar er að auðvelt var að nota þær sem takka á síðum, láta þær blikka með CSS kóða eða breyta um lit með Javascript. 
+                                            <br/>
+						                    Notast var við audio eiginleikann í HTML til þess að spila .mp3 skrá á síðunni.
+						                    <br/>
+                                            Til að byrja með voru örvarnar sem færðu á milli verkefna fastar á síðunni en með hjálp <a class="email" href="https://stackoverflow.com/questions/24407796/positioning-vertically-center-aligned-navigation-arrows-to-the-left-and-right-of">Stack Overflow</a>  tókst mér að stilla þær svo þær fylgdu eftir þegar síðan færðist upp og niður.
+                                            <br/>
+                                            Fyrir ferilskrána sótti ég sniðmát af <a class="email" href="https://superdevresources.com/html-resume-templates/">SDR</a> og lagaði til þar til hún passaði á vefsíðuna.
+                                            <br/>
+                                            Þegar síðan var tilbúin opnaði ég GitHub Desktop, fyllti í "Summary (required)" reitinn, valdi "Commit to main" og að lokum "Publish repository". Þá var ég búinn að hlaða síðunni upp á GitHub.
+                                            <br/>
+                                            <br/>
+                                                <a>
+                                                    <img src="images/Verkefni 1 myndir/publish.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                                </a>
+                                            <br/>
+                                            Til þess að finna hlekkinn að síðunni opnaði ég GitHub í vafra og opnaði verkefnið. Síðan valdi ég "Settings" og þar næst "Pages". Þegar þangað var komið stillti ég "Branch:" á "main" og að lokum smellti ég á "Save". Við það birtist hlekkur sem flytur mann á síðuna.
+                                            <br/>
+                                            <br/>
+                                                <a>
+                                                    <img src="images/Verkefni 1 myndir/publish_page.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                                </a>
+                                            <br/>
+                                            Þá var síðan tilbúin og verkefninu lokið.
+                                        </p>
+                                        
+                                    </div>
+                                    
+                                    <div class="mySlides">
+                                        <div class="numbertext">Hópaverkefni 1</div>
+                                        <h3 style="text-align: center; line-height: 300%;">Kerf prófun fyrir leiserskurð</h3><br/>
+                                        <p style="padding-left: 10%; word-wrap: break-word; width: 90%;">
+                                            Sjá <a class="email" href="https://konnikul.github.io/heh102_vel608g/verkefni2.html?fbclid=IwAR13LEHR8AWCshr_323o9WoysuLn1Gdbo_zrKItXOJjK2UjQV7I5GbFYt-I">hér</a>.
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="mySlides">
+                                        <div class="numbertext">Verkefni 2</div>
+                                        <h3 style="text-align: center; line-height: 300%;">Tölvustuddur skurður</h3><br/>
+                                        <p style="padding-left: 10%; word-wrap: break-word; width: 90%;">
+                                            Verkefni tvö var tvískipt. Annars vegar átti að skera út límmiða með vínylskera og hins vegar  að skera út „parametrískt“ „press-fit“ módel með leiserskera.
+                                            <br/>
+                                            Engar kröfur voru gagnvart fyrri hluta verkefnisins aðrar en þær að kynnast tækinu og skera út það sem mig langaði.
+                                            <br/>
+                                            Vínylskeri virkar þannig að upprúlluð vínyl rúlla er mötuð í skerann sem sker í hana munstur. Vínylskerinn les .pdf skrá sem þarf að búa til áður en byrjað er að skera.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/skeri.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Leyfilegt magn af vínyl var 100x50cm og mátti ég gera hvað sem er með efnið.
+                                            <br/>
+                                            Ég ákvað því að prenta orðin "Live Laugh Love" í svörtum vínyl sem ég límdi svo aftan á fartölvuna mína. Að útbúa skrána og skera tók innan við hálftíma.
+                                            <br/>
+                                            Vínylskerinn skar útlínur orðanna í dúkinn en ég þurfti síðan að taka hvern staf fyrir sig til þess að líma aftan á tölvuna.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/lll_skorid.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            <a>                                               <img src="images/Verkefni 3 myndir/lll_skorid_plokkad.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Erfitt var að raða stöfunum á tölvuna þar sem þeir voru allir í sitthvoru lagi og áttu það til að bogna eða límast á vitlausum stöðum.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/lll_a_tolvu.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Að lokum tókst þó verkið og stafirnir prýddu bakhlið tölvunnar með glæsibrag.
+                                            <br/>
+                                            Fyrir seinni hluta verkefnisins vildi ég gera stand sem gæti haldið fartölvu, spjaldtölvu eða bók. Ég vildi að standurinn væri samanbrjótanlegur svo auðvelt væri að koma honum fyrir í tösku eða pakka og geyma meðal annars í skúffu.
+                                            <br/>
+                                            Efnin sem voru í boði voru akríll í þremur litum eða krossviðarplata. Ég ákvað að skera úr krossvið þar sem mér þótti það meira spennandi.
+                                            <br/>
+                                            Í boði var Fusion Edge leiserskeri sem var mjög auðvelt að læra á og nota.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/lskeri.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Til þess að skera krossviðinn varð að notast við eftirfarandi stillingar.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/stillingar.png" style="width: 60%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Eftir að hafa lært á leiserskerann gat ég byrjað að hanna hluti til þess að prófa.
+                                            <br/>
+                                            Til þess að gera standinn samanbrjótanlegan varð ég að búa til svokallað „living hinge“ sem myndi leyfa löppunum að bogna fram og aftur. 
+                                            <br/>
+                                            Ég byggði hönnunina mína á tveimur stöndum sem ég fann á netinu. Annars vegar á standi sem að
+                                            <a class="email" href="https://medium.com/@ritikag/laser-cutting-8a3afb6b5708">Ritika</a>
+                                            hafði hannað.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/standur1.jpeg" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Sem og þeim sem ég fann á 
+                                            <a class="email" href="https://vectorsfile.com/portable-phone-stand-laser-cut-dxf-file/">VectorsFile</a>.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/standur2.jpg" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Gallinn var þó sá að hvorugur þessara standa notaðist við pressfit festingar sem var eitt af megin kröfum verkefnisins. Ég varð því að bæta svoleiðis festingum við mína hönnun til þess að uppfylla þær.
+                                            <br/>
+                                            Ég skissaði drög að standi og endurbætti hann síðan í Fusion 360.
+                                            <br/>
+                                            Standurinn átti að vera flatur þegar búið væri að pakka honum og ekki stærri en fartölvan mín. 
+                                            <a>                                               <img src="images/Verkefni 3 myndir/t_standur_1.png" style="width: 60%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Lappirnar sem hvíla í miðjum standinum áttu að geta bognað fram og til baka með því að nota living hinge raufarnar. Þar að auki áttu lappirnar að vera tvær til þess að bjóða upp á tvo mismunandi halla.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/t_standur_2.png" style="width: 60%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Standur á hlið með lappir aftur.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/t_standur_3.png" style="width: 60%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Syllan sem tölvan hvílir á þarf að festast við plötuna og ákvað ég að gera það með press- og snap-fit festingu. Hún yrði press-fit að hluta en neðst á henni væru snap-fit armar sem myndu halda henni fastri við plötuna. Til þess að geyma sylluna varð einnig að vera hægt að geyma hana á standinum þegar búið væri að fjarlægja hana. Á standinum sjálfum varð því að vera rauf fyrir sylluna sem hægt væri að geyma hana í. Syllan væri því press-fit festing á tvo vegu, annars vegar lóðrétt upp úr standinum og hins vegar lárétt í standinum.
+                                            <br/>
+                                            Eftir að hafa teiknað fyrstu drög að standi í Fusion 360 var kominn tími til að skoða betur living hinge hjarirnar. Ég hafði fundið síðuna
+                                            <a class="email" href="https://facfox.com/docs/kb/cutting-technique-for-bending-applications">FOXDOC</a>
+                                            sem fjallaði um mismunandi gerðir hjara og eiginleika þeirra. Á FOXDOC var fjöldi hjara en ég ákvað að skoða einungis fjórar gerðir til þess að bera saman og meta hver væri best fyrir þetta verkefni.
+                                            <br/>
+                                            Hjarirnar sem ég skoðaði voru „Straight Cut Lines“,
+                                            <a>                                               <img src="images/Verkefni 3 myndir/straight_cut_line_5.png" class="rotate90" style="width: 20%; display: block; margin-left: auto; margin-right: auto;"/>
+                                            </a>
+                                            „Wavy Cut Lines“,
+                                            <a>                                               <img src="images/Verkefni 3 myndir/wavy_cut_line_5.png" class="rotate90" style="width: 20%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            „Small waves“,
+                                            <a>                                               <img src="images/Verkefni 3 myndir/small_waves_5.png" class="rotate90" style="width: 20%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            og „Wide and Narrow Waves“.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/wide_and_narrow_waves_5.png" class="rotate90" style="width: 20%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Eftir að hafa teiknað öll fjögur munstrin skar ég út tvö þeirra, straight cut lines og wide and narrow waves. Ég passaði að hafa munstrin alltaf eins en breytti bilinu á milli þeirra sem ég ákvað að skyldu vera 3mm, 5mm og 10mm bil.
+                                            <br/>
+                                            Ég byrjaði á því að skoða straight cut lines fyrir öll þrjú tilfellin og mat hve vel platan gat bognað.
+                                            <br/>
+                                            Fyrst skoðaði ég 3mm bilið.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/straight_cut_lines_3.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Platan átti mjög auðvelt með að bogna.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/straight_cut_lines_3_bend.png" class="rotate270" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þar næst skoðaði ég 5mm bilið.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/straight_cut_lines_5.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            En það átti mun erfiðara með að bogna.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/straight_cut_lines_5_bend.png" class="rotate270" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Að lokum skoðaði ég 10mm bilið.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/straight_cut_lines_10.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            En það átti mjög erfitt með að bogna.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/straight_cut_lines_10_bend.png" class="rotate270" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Næst skoðaði ég wide and narrow waves.
+                                            <br/>
+                                            3mm munstrið reyndist of viðkvæmt sem varð til þess að það brotnaði þegar ég beygði það.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/wavy_cut_lines_3.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            5mm munstrið var skoðað næst.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/wavy_cut_lines_5.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            En það átti frekar erfitt með að bogna.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/wavy_cut_lines_5_bend.png" class="rotate270" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Að lokum skoðaði ég 10mm munstrið.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/wavy_cut_lines_10.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            En það bognaði ekki neitt.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/wavy_cut_lines_10_bend.png" class="rotate270" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Niðurstöðurnar voru þær að straight cut lines virkuðu mjög vel og höfðu þann kost að vera beinar línur sem gerði þær mjög þægilegar að vinna með. Wide and narrow waves virkuðu illa og brotnuðu við 3mm. Í kjölfarið ákvað ég að þar sem straight cut lines munstrið væri nánast eins og wavy cut lines munstrið myndi ég ekki skoða það því það ætti að hegða sér svipað. Sama ályktun var dregin fyrir wide and narrow waves og small waves sem ég bjóst við að myndu hegða sér eins. Það var því óþarfi að skoða hin tvö tilfellin og hélt ég áfram með straight cut lines.
+                                            <br/>
+                                            Allt í allt tók það um þrjár klukkustundir að útbúa munstrin, skera og prófa. Það hefði tekið mun lengri tíma að skoða öll munstrin sem hefði einnig haft lítil áhrif á niðurstöðurnar.
+                                            <br/>
+                                            Þar næst fór ég að skoða hvernig best væri að útfæra hjarirnar svo lappirnar gætu bognað aftur en á sama tíma haldið standinum uppi. Án stuðnings myndi þyngd standsins hvíla á löppunum sem gæti orðið til þess að þær gæfu sig undan þunganum eða myndu verpast varanlega. Ég ákvað því að koma fyrir pinna sem næði frá standinum og niður í löppina. Þyngd standsins myndi því hvíla á pinnanum sem myndi hlífa löppunum.
+                                            <br/>
+                                            Ég teiknaði drög að löppum sem ég gat komið pinna fyrir í.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/lopp_3.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Pinninn næði frá botni lappanna og upp í standinn.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/lopp_3_beygja.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Ég skoðaði þetta fyrir báðar lappirnar.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/lopp_5.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Minni löppin átti erfiðara með að bogna og halda pinnanum á sínum stað.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/lopp_5_beygja.png" class="rotate270" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þessi útfærsla reyndist ekki nógu góð þar sem pinninn átti erfitt með að haldast á sínum stað. Til þess að leysa vandamálið ákvað ég þá að minnka þann hluta lappanna sem gæti bognað. Ég lét aðeins efri hlutann bogna en þá var ekki lengur þörf á pinnanum á milli. Lappirnar ættu mun auðveldara með að bera þungann og ættu ekki að verpast til vegna hans en þar sem þær voru aðeins 4mm varð ég að bæta við festingum neðst á þær sem áttu að halda þeim stöðugri.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/pressfit_3.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þessar festingar myndu festast við lappirnar með svokölluðum „Inter-locking joints“ og gera þær stöðugri.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/pressfit_1.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þessar festingar urðu einnig að vera press-fit festingar við standinn sjálfan svo hægt væri að geyma hann sem eina heila einingu. Festingarnar eru því hannaðar með tvennt í huga, að festast neðst á lappirnar með interlocking joints og liggja fastar í plötunni með press-fit festingu. 
+                                            <a>                                               <img src="images/Verkefni 3 myndir/pressfit_2.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Standurinn var þá tilbúinn og þar sem hann var parametrískur var lítið mál að breyta öllum stærðum og þykktum.
+                                            <br/>
+                                            Lang mesti tíminn fór í prófin á hjörunum og festingunum. Innan við klukkustund fór í fyrstu hönnun á standinum sem síðan var endurbætt að hverju prófi liðnu. Lang mesti tími verkefnisins fór í að ákvarða hvað best væri að prófa og að bíða eftir plássi til að skera.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/fusion.jpg" style="width: 100%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þegar standurinn er ekki í notkun eru festingarnar á löppunum fjarlægðar sem og syllan fremst á standinum. Þeim er svo þrýst í standinn og nýtast þannig sem læsingar sem skorða lappirnar fastar og passa að þær geti ekki bognað.
+                                            <br/>
+                                            Á myndinni hér fyrir neðan má sjá hvernig öll stykkin hvíla föst á sínum stað í plötunni þegar hún er samanbrotin.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/standur_flatur.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            <a>                                               <img src="images/Verkefni 3 myndir/standur_flatur_i.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            <a>                                               <img src="images/Verkefni 3 myndir/standur_lappir_litill.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Standurinn tókst vel en þó voru örfá atriði sem hefði þurft að endurbæta aðeins.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/tolva_setup.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Standurinn gat auðveldlega borið fartölvuna mína og með því að geta valið um tvo halla gat ég staðsett tölvuna svo hún passaði þægilega hverju sinni.
+                                            <a>                                               <img src="images/Verkefni 3 myndir/saman.jpg" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Standurinn átti það hins vegar til að falla saman þar sem festingarnar á löppunum voru ekki alveg nógu langar og vegna þess að aðeins of fáar raufar voru skornar í efst í lappirnar. Þetta er auðvelt að laga en þar sem standurinn virkaði og ég var búinn með efnið gat ég ekki skorið hann upp á nýtt.
+                                        </p>
+                                    </div>
+                                        
+                                    <div class="mySlides">
+                                        <div class="numbertext">Hópaverkefni 2</div>
+                                        <h3 style="text-align: center; line-height: 300%;">Skorður við 3D prentun</h3><br/>
+                                        <p style="padding-left: 10%; word-wrap: break-word; width: 90%;">
+                                            Fyrir þetta verkefni valdi ég að nota minn eigin Prusa i3 MK3 3D prentara. Fyrir verkefni þrjú voru tveir hlutir sem ég varð sérstaklega að skoða. Fyrst þurfti ég að komast að því hversu lítið bil ég gæti haft milli hluta án þess að þeir límdust saman og síðan þurfti ég að skoða við hvaða hámarks halla ég gæti prentað upp á við.
+                                            <a>                                               <img src="images/Verkefni 4 myndir/Picture4.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Fyrir verkefni þrjú bjó ég til púsl úr fjölda eininga sem áttu að geta runnið framhjá hvor annarri. Ég teiknaði því fyrst púslið og hafði það parametrískt sem leyfði mér að fínstilla alla þá eiginleika sem ég vildi skoða.
+                                            <a>                                               <img src="images/Verkefni 4 myndir/Picture5.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Ég byrjaði á því að hafa bilið milli hverrar einingar 1mm sem reyndist allt of mikið.
+                                            <a>                                               <img src="images/Verkefni 4 myndir/Picture6.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þar næst minnkaði ég það í 0.5mm sem virkaði mjög vel en ég vildi þó skoða hvort að ég kæmist lengra.
+                                            <a>                                               <img src="images/Verkefni 4 myndir/Picture7.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Ég minnkaði bilið í 0.4mm sem skilaði mjög góðri niðurstöðu.
+                                            <a>                                               <img src="images/Verkefni 4 myndir/Picture8.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Til þess að vera öruggur fór ég einum neðar í 0.3mm en sá strax að kubbarnir byrjuðu að límast saman. Þá vissi ég að 0.4mm væri minnsta vegalengdin sem ég gæti haft á milli hverrar einingar.
+                                            <br/>
+                                            Þá var komið að því að prófa við hvaða horn ég gæti prentað upp á við.
+                                            <a>                                               <img src="images/Verkefni 4 myndir/Picture9.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Eins og sjá má á myndinni hér fyrir ofan eru einingarnar hannaðar þannig að hver eining liggur innan í næstu einingu. Þarna er verið að prenta í lausu lofti og vildi ég því komast að því hvað þessi bútur gæti skarað langt út. 
+                                            <br/>
+                                            Ég skoðaði fjögur tilfelli og leyfði kanntinum að skara 7, 8, 9 og 10mm út.
+                                            <a>                                               <img src="images/Verkefni 4 myndir/Picture10.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Niðurstöðurnar voru þær að 10mm virkuðu ekki og sást greinilega að 9mm ættu í erfiðleikum með hallann. Ég ákvað því að 8mm væru hámarkið og notaði þá í framhaldið.
+                                            <a>                                               <img src="images/Verkefni 4 myndir/Picture11.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Púslið kom mjög vel út og sáust engin ummerki um það að prentarinn hafi átt erfitt með einhvern hluta púslsins.
+                                            <a>                                               <img src="images/Verkefni 4 myndir/Picture12.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þá hafði ég ákvarðað allt sem ég þurfti að skoða fyrir verkefnið og gat því prentað fullkomið púsl af Íslandi.
+                                        </p>
+                                    </div>
+
+                                    <div class="mySlides">
+                                        <div class="numbertext">Verkefni 3</div>
+                                        <h3 style="text-align: center; line-height: 300%;">3D prentun og 3D skönnun</h3><br/>
+                                        <p style="padding-left: 10%; word-wrap: break-word; width: 90%;">
+                                            Verkefni þrjú var tvískipt og átti meðal annars að 3D skanna hlut sem og að hanna módel sem ekki væri hægt að framleiða með frádráttar framleiðslu. Engar skorður voru á lögun eða eiginleikum hlutarins aðrar en þær að hluturinn mátti ekki nota meira en 100g af plasti.
+                                            <br/>
+                                            Fyrir fyrrihluta verkefnisins ákvað að gera „sliding puzzle“ púsl af Íslandi og varð því að hanna púslið sjálft og komast að því hvernig ég gæti búið til módel af Íslandi.
+                                            <br/>
+                                            Þar sem ég hafði áður búið til módel af Íslandi sem og öðrum löndum var það hins vegar lítið mál. Til þess að búa til landslagsmódel eru ýmsar leiðir og mun ég minnast á þrjár þeirra hér.
+                                            <br/>
+                                            Fyrsta aðferðin notar forritið 
+                                            <a class="email" href="https://www.qgis.org/en/site/">QGIS</a>
+                                            sem er öflugt forrit fært um að gera hágæða líkön af hvaða landslagi sem er. Með QGIS er til dæmis hægt að búa til líkön af einstaka fjöllum eins og Kirkjufelli í háum gæðum sem hinar aðferðirnar eiga mjög erfitt með að gera.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture13.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Eftir að gera líkan af svæðinu sem á að prenta er lítið mál að búa til .stl skrár af því og svo 3D prenta.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture14.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þegar búið er að prenta módelið er síðan hægt að ganga enn lengra og mála það.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture15.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Það var hins vegar ekki markmið þessa verkefnis heldur vildi ég fá módel af Íslandi í frekar lágum gæðum svo auðvelt væri að greina hluta þess á púslinu.
+                                            <br/>
+                                            Önnur aðferðin notast við viðbótina 
+                                            <a class="email" href="https://github.com/hanskellner/Fusion360Image2Surface">Image2Surface</a>
+                                            fyrir Fusion 360 en sú viðbót er fær um að breyta hæðarkortum (e. heightmaps) í þrívítt net sem hægt er að 3D prenta. 
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture16.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Image2Surface er hins vegar takmarkað af þeim hæðarkortum sem hægt er að finna á netinu sem getur verið óhentugt þar sem upplausn þeirra ræður gæðum módelsins og oft getur reynst erfitt að finna hæðarkort af ákveðnum landsvæðum.
+                                            <br/>
+                                            Þriðja aðferðin er þægilegasta aðferðin þó hún gefi af sér módel í lægri gæðum en hinar tvær. Þar er notast við vefsíðuna
+                                            <a class="email" href="https://jthatch.com/Terrain2STL/">Terrain2STL</a>
+                                            sem leyfir notandanum að búa til þrívítt líkan af hvaða landshluta jarðar sem er í örfáum skrefum. 
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture17.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Með því að breyta eftirfarandi stillingum getum við á mjög auðveldan máta fengið þrívítt líkan af Íslandi.
+                                            <br/>
+                                            Byrjum á að stilla staðsetninguna á 66.8 og -25.4.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture18.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Stillum vertical scaling á 4, box scaling factor á 20, box width á 13° og box height á 4°.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture19.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Stillum vatnshæðina og búum líkanið til með því að velja generate model og hlöðum því svo niður. 
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture20.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Opnum .STL skrána í Fusion með því að velja import mesh og velja skrána sem Terrain2STL bjó til. Að útbúa líkan með Terrain2STL tekur aðeins örfáar mínútur og því kjörið að nota.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture21.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Erfitt er að vinna með „mesh“ skrár eða net þar sem þau taka gífurlegt magn vinnslumynnis vegna stærðar þeirra. Það þarf því mjög öfluga tölvu til þess að vinna með stór og flókin net. Tölvan mín réði ágætlega við þetta net en þegar kom að því að breyta því í „solid body“ skrá sem var nauðsynlegt fyrir púslið réði hún ekki við það. Ég varð því að laga netið til svo auðveldara væri að vinna með það. 
+                                            <br/>
+                                            Net eru uppbyggð af „polygons“ eða þríhyrningum og ræður fjöldi þessara þríhyrninga til um umfang netsins. Þeim mun fleiri sem þríhyrningarnir eru þeim mun erfiðara er að vinna með netið. Það verður því að fækka þessum þríhyrningum til þess að hægt sé að vinna með netið.
+                                            <br/>
+                                            Skráin sem Terrain2STL bjó til innihélt 377,154 þríhyrninga en með því að fylgja eftirfarandi skrefum tókst mér að koma þeim niður í 19,540 þríhyrninga sem er um 20-föld fækkun.
+                                            <br/>
+                                            Byrjum á því að nota „Repair“ tólið og veljum „Stitch and Remove“ sem lokar fyrir göt í netinu og saumar saman þríhyrningana. Stitch fjarlægir einnig tvöfalda þríhyrninga, litlar skeljar og illa myndaða þríhyrninga.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture22.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Veljum aftur repair nema núna veljum við „Close Holes“ til þess að ganga úr skugga um að öll göt séu lokuð. Close holes gerir einnig mjög smáar og fínar breytingar á netinu sem og að víxla þríhyrningum svo þeir stefni allir rétt.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture23.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Veljum repair í þriðja skiptið og veljum „Wrap“ sem gerir það sama og stitch sem og að eyða öllum innri þríhyrningum netsins svo þeir á yfirborðinu sitji einir eftir.
+                                            <br/>
+                                            Þá höfum við lagað flesta galla netsins en veljum repair í fjórða skiptið og „Rebuild“. Þessi eiginleiki endurgerir módelið miðað við þær forsendur sem lagðar eru fyrir. Hægt er að endurgera módelið án þess að missa neina eiginleika þess en hér valdi ég „Blocky“ með „Density“ stillt á 256 til þess að draga þríhyrningana saman og minnka þannig skerpuna svo auðveldara væri að greina mismunandi landshluta þegar búið væri að prenta það.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture24.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Ég valdi síðan að endurtaka skrefið til þess að minnka skerpuna ennþá meira. Þetta var einungis gert fyrir útlitið.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture25.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Eins og sjá má eru gæðin minni en við það er hver landshluti orðinn greinanlegri.
+                                            <br/>
+                                            Þá viljum við halda áfram að fækka þríhyrningunum og í þetta sinn notum við „Reduce Mesh“ tólið.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture26.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þar næst viljum við endurbyggja netið með „Remesh“ sem við höfum stillt á fínustu stillinguna til þess að halda skörpum hornum réttum og passa að hluturinn aflagist sem minnst.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture27.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Að því loknu höfum við fækkað þríhyrningunum svo mikið að lítið mál er nú að breyta því í solid skrá með „Convert Mesh“ skipuninni.
+                                            <br/>
+                                            Þegar búið er að velja convert mesh eru þrír valmöguleikar í boði, „Faceted“, „Prismatic“ og „Organic“. Ég valdi faceted þar sem tölvan mín réði hvorki við prismatic né organic. Allir valmöguleikarnir skila sömu niðurstöðunni þó smávegis munur sé á gæðum líkansins.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture28.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þá hefur okkur tekist að breyta .STL skrá í solid skrá sem auðvelt er að vinna með í Fusion.
+                                            <br/>
+                                            Losum okkur við botnplötuna með því að búa til „Plane“ einhversstaðar á henni.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture29.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Notum að lokum „Split Body“ með planið sem við bjuggum til áður sem hjálpartól.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture30.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Að lokum sitjum við uppi með solid skrá af Íslandi sem við getum skalað til og breytt hvernig sem okkur listir.
+                                            <br/>
+                                            Að laga net til getur tekið tíma og ræðst það að mestu á getu tölvunnar. Ferlið í heild sinni tók um klukkustund en fleiri tímar fóru í að kynna mér net og komast að því hvernig best væri að minnka þau á einfaldan máta. Í fyrstu hafði ég skoðað forritið
+                                            <a class="email" href="https://www.meshlab.net/">MeshLab</a>
+                                            en komst að lokum að því að Fusion 360 réði ágætlega við verkið og ákvað því að notast við það.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture31.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Næst varð ég að hanna púslið. Ég byrjaði á því að hanna parametrískan kubb sem varð að taka tillit til bils í x, y og z átt. Þetta reyndist flókið í fyrstu en eftir nokkrar tilraunir tókst mér að búa til einingu sem passaði bilið frá henni og í næstu einingu í allar stefnur.
+                                            <br/>
+                                            Þar sem ég vildi hafa púslið parametrískt tók það mig um einn dag að hanna það. Ég skoðaði nokkrar mismunandi leiðir til þess að teikna hvern kubb fyrir sig. Vandamálið sem ég lenti sífelt í var að tolerance bilið milli eininganna var ekki rétt og þær skáru í hvora aðra þegar þær voru orðnar fleiri en tvær. Var ég þá að vinna með „3D sketches“ eða þrívíðar teikningar í Fusion til þess að extrude-a og loft-a flókin form. Ég ákvað að lokum að teikna kassa sem ég skar til með extrudes og náði þannig að fá formið sem ég sóttist eftir á einfaldan máta.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture32.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þessir kubbar munu raðast hlið við hlið og því mikilvægt að bilið milli allra hliða sé jafnt og skalist til þegar módelinu er breytt.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture33.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þar sem púslið var parametrískt var ekkert mál að breyta stærðarhlutföllum þess. Byrjað er með 1x1 grunn og þarf einungis að breyta tveimur tölum til þess að skala hann til.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture34.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Með því að breyta Fjöldi_X og Fjöldi_Y er hægt að fjölga kubbunum eftir þörfum.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture36.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Hægt er að búa til eins stórt púsl og prentarinn ræður við.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture37.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þegar búið er að ákveða stærðina er einn kubbur fjarlægður og mynd komið fyrir á plötunni.
+                                            <br/> 
+                                            Fyrir þetta verkefni notaði ég 6x5 reiti.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture38.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Með því að nota Image2Surface er mögulega hægt að gera kortið parametrískt með púslinu en það yrði mjög flókið og ólíklegt að flestar tölvur réðu vel við það.
+                                            <br/>
+                                            Ég færi því Íslandsskrána sem ég hafði áður búið til í þessa skrá, sker hana til og sameina hverja einingu.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture39.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Ég skala kortið til og færi í höndunum á stað sem mér lýst vel á.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture40.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Að búta nýju skrána niður er gert með parametrískum teikningum sem gerir ferlið mjög auðvelt.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture41.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Með því að nota „Combine“ eiginleikann er lítið mál að sameina kortið við hvern reit fyrir sig.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture42.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Að lokum fæst púsl af Íslandi.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture43.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Í Fusion 360 er valmöguleikinn „3D Print“ sem við veljum til þess að flytja skrána beint yfir í „PrusaSlicer“ forritið þar sem við veljum 0.15mm gæði, 20% Infill og PLA plast.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture44.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Eins og sjá má er plastið um 98.72g sem uppfyllir því þá kröfu um að nota ekki meira en 100g.
+                                            <br/>
+                                            Ég prentaði kortið með mínum eigin Prusa i3 MK3 prentara sem tók um tólf klukkustundir.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture45.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þegar verið er að 3D prenta er mjög mikilvægt að fyrsta lagið af plasti sé slétt og fínt eins og sjá má á myndinni hér að neðan.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture46.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Þegar lengra dró á prentið höfðu engir gallar komið upp. Engin horn voru farin að verpast og allt virtist í góðu lagi.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture47.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Í Prusaslicer er stilling sem leyfir manni að skipta um plast á miðri leið. Þannig tókst mér að prenta púslið í hvítu PLA en kortið sjálft í ljósbláu PLA.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture48.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Að lokum fékkst púsl af Íslandi. Púslið sjálft reyndist mjög tímafrekt og erfitt að leysa. 
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture49.png" style="width: 80%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Púslið kom vel út en þó voru örlitlir gallar í því. Bilið milli hverrar einingar reyndist vera aðeins of mikið sem varð til þess að hver kubbur var lausari en hann átti að vera. Þetta var vegna þess að ég hafði gleymt að breyta einni stillingu til baka áður en ég prentaði púslið. Auðvelt var að laga þetta vandamál en þar sem það myndi taka aðrar tólf klukkustundir að prenta nýtt púsl kaus ég að gera það ekki þar sem þetta virkaði nógu vel. Óraunhæft er að framleiða þetta með frádráttar framleiðslu og voru kröfur verkefnisins því uppfylltar.
+                                            <br/>
+                                            Fyrir seinni hluta verkefnisins ákvað ég að 3D skanna 3D prentarann minn. Til þess að 3D skanna fékk ég mér appið 
+                                            <a class="email" href="https://play.google.com/store/apps/details?id=com.smartmobilevision.scann3d&hl=en&gl=US">SCANN3D</a>
+                                            og byrjaði að taka myndir af prentaranum mínum. 
+                                            <br/>
+                                            SCANN3D var mjög auðvelt að nota. Þegar ég opnaði það valdi ég „New Model“ og fylgdi síðan leiðbeiningunum sem birtust. Ég var aðeins nokkrar mínútur að 3D skanna prentarann.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture50.png" style="width: 40%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Ég varð að lágmarki að taka 20 myndir af prentaranum frá mismunandi sjónarhornum svo að appið gæti búið til líkanið. Ég tók 180° myndir af prentaranum þó að 360° hefðu skilað betri niðurstöðum. Ég hafði hins vegar ekki plássið til þess að taka myndir allt í kringum prentarann þar sem hann var upp við vegg. Niðurstöðurnar voru hins vegar mjög góðar.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture51.png" style="width: 40%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            Appið var fært um að meta allar dýptir prentarans mjög vel og þrátt fyrir að hafa tekið myndirnar frá mörgum mismunandi hæðum og sjónarhornum skilaði það mjög góðu neti.
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture52.png" style="width: 40%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture53.png" style="width: 40%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            <a>                                               <img src="images/Verkefni 5 myndir/Picture54.png" style="width: 40%; display: block; margin-left: auto; margin-right: auto; "/>
+                                            </a>
+                                            SCANN3D var mjög auðvelt að nota og skilaði góðum niðurstöðum. Til þess að hlaða módelinu niður varð ég hins vegar að kaupa forritið sem ég ákvað að gera ekki. Það tók um klukkustund að setja forritið upp og skanna allan hlutinn.
+                                        </p>
+                                    </div>
+                                        
+                                    <div class="mySlides">
+                                        <div class="numbertext">Lokaverkefni</div>
+                                        <h3 style="text-align: center; line-height: 300%;">Lokaverkefni partur 1 & 2</h3><br/>
+                                        <p style="padding-left: 10%; word-wrap: break-word; width: 90%;">
+                                            Lokaverkefnið má sjá í heild sinni 
+                                            <a class="email" href="https://kallidreki.github.io/Sida/hopa.html">
+                                                hér.
+                                            </a>
+                                            <br/>
+                                            Verkþættirnir sem ég sá um að framfylgja voru eftirfarandi.
+                                            <br/>
+                                            Hugmyndavinna var framkvæmd af öllum meðlimum hópsins. Þegar búið var að ákveða klakaboxið greindi ég frá auðveldri leið til að búa til svg skrár sem hægt var að flytja í Fusion.
+                                            <br/>
+                                            Allir meðlimir hópsins voru saman að ákvarða verkniðurröðunina. Þar sem Hákon myndi ekki komast með í útskurðinn á mótinu ætlaði hann að bæta það upp með því að búa til einblöðunginn og myndbandið.
+                                            <br/>
+                                            Útfærsla á skurðarferlum, hermun og fræsing var útfærð í sameiningu með Kalla í Fablab. Farið var á fund með Jóni Þóri þar sem komist var að því hvaða bora ætti að nota hverju sinni og stillingum breytt í samræmi við þá. Að fundinum loknum hafði tekist að stytta fræsingartímann um 1-2 klukkustundir. Í heildina vorum við 7 klukkustundir að undirbúa og skera mótið út.
+                                            <br/>
+                                            Seinna skiptið í fablab voru allir meðlimir hópsins saman að undirbúa mótið og sílikonið. Sílikoninu var blandað og hellt í mótið. Sílikonið var 3 daga að harðna.
+                                            <br/>
+                                            Meginhluti textans á vefsíðunni var skrifaður af mér og Kalla. 
+                                            <br/>
+                                            Yfirferð á vefsíðu var framkvæmd af mér. Farið var yfir málfar og stafestningu á síðunni. GIF af hönnunarferlinu í Fusion var búið til af mér á sama tíma.
+                                        </p>
+                                    </div>
+  
+                                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                            <script>
+                                var slideIndex = 1;
+                                showSlides(slideIndex);
+
+                                function plusSlides(n) {
+                                showSlides(slideIndex += n);
+                                }
+
+                                function currentSlide(n) {
+                                showSlides(slideIndex = n);
+                                }
+
+                                function showSlides(n) {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                var dots = document.getElementsByClassName("demo");
+                                var captionText = document.getElementById("caption");
+                                if (n > slides.length) {slideIndex = 1}
+                                if (n < 1) {slideIndex = slides.length}
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";
+                                }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex-1].style.display = "block";
+                                dots[slideIndex-1].className += " active";
+                                captionText.innerHTML = dots[slideIndex-1].alt;
+                                }
+                            </script>
+                    </article>
+
+                <!-- Projects -->
+                <article id="work" class="panel" style="text-align: center;">
+                    <head>
+                        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+                   
+                        <title>One Page Resume</title>
+                   
+                        <style type="text/css">
+                           * { margin: 0; padding: 0; }
+                           /*body { font: 16px Helvetica, Sans-Serif; line-height: 24px; background: url(images/noise.jpg); }*/
+                           .clear { clear: both; }
+
+                           #page-wrap { width: 90%; margin: 2% auto 3%; }
+
+                           #pic { float: right; margin: -30px 0 0 0; width: 25%; border-radius: 50%;}
+
+                           h1 { margin: 0 0 14px 0; padding: 0 0 12px 0; font-size: 30px; font-weight: bold; letter-spacing: -2px; border-bottom: 1px solid #999; float: left;}
+
+                           h2 { font-size: 12px; margin: 0 0 6px 0; position: static; }
+
+                           h2 span { position: absolute; bottom: 0; right: 0; font-style: italic; font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal; }
+
+                           p { margin: 0 0 15% 0; text-align: left;}
+
+                           a { color: rgb(49, 90, 201); text-decoration: none}
+
+                           a:hover { border-bottom-style: solid; color: black; }
+
+                           ul { margin: 0 0 32px 17px; }
+
+                           #objective { width: 60%; float: left; }
+
+                           #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; }
+
+                           dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
+
+                           dd { width: 60%; float: left; }
+
+                           dd.clear { float: none; margin: 0; height: 15px; }
+                        </style>
+                   </head>
+                   
+                   <body>
+                   
+                       <div id="page-wrap">
+                       
+                           <img src="images/Myndir/eg.jpg" alt="Eg" id="pic" />
+                       
+                           <div id="contact-info" class="vcard">
+                           
+                               <!-- Microformats! -->
+                           
+                               <h1 class="fn">Dagur Óskarsson</h1>
+                           
+                           </div>
+
+                           <div id="objective">
+
+                            <p>
+                                Heimilisfang: <span class="tel">Hjarðhagi 6</span><br />
+                                Sími: <span class="tel">+354 525 4000</span><br />
+                                Netfang: <a class="email" href="mailto:greatoldone@lovecraft.com">dao25@hi.is</a>
+                            </p>
+
+                        </div>
+                                   
+                           <div id="objective">
+                               <p>
+                                   Ég heiti Dagur og ég er nemi á 3 ári í Vélaverkfræði í Háskóla Íslands. Í mörg ár hef ég haft áhuga á hönnun og nýsköpun og þess vegna ákvað ég að fara í verkfræði.
+                                   <br/>
+                                   <br/>
+                                   Það sem ég hef áhuga á að fá út úr þessu námskeiði er að læra um ýmsa framleiðsluferla og hvernig hanna þarf hluti svo framleiðsla á þeim sé raunhæf og hagkvæm.
+                               </p>
+                           </div>
+                           
+                           <div class="clear"></div>
+                           
+                           <dl>
+                               <dd class="clear"></dd>
+                               
+                               <dt>Menntun</dt>
+                               <dd>
+                                   <p style="text-align: center;">
+                                        <strong>Háskóli Íslands:</strong> Vélaverkfræði, BS<br/>
+                                        <strong>Menntaskólinn við Sund:</strong> Stúdentspróf
+                                    </p>
+                               </dd>
+
+                               <dd class="clear"></dd>
+                               
+                               <dt>Starfsferill</dt>
+                               <dd>
+                                   <p style="text-align: center;">
+                                        <strong>Optitog:</strong> Rannsóknarverkefni<br/>
+                                        <strong>Adrenalín:</strong> Starfsmaður<br/>
+                                        <strong>Ultima Thule:</strong> Lagerstjóri<br/>
+                                        <strong>Ultima Thule:</strong> Starfsmaður
+                                    </p>
+                               </dd>
+
+                               <dd class="clear"></dd>
+                               
+                               <dt>Kunnátta</dt>
+                               <dd>
+                                   <p style="text-align: center;">
+                                        Python<br/>
+                                        HTML<br/>
+                                        AutoCAD<br/>
+                                        Solidworks<br/>
+                                        Inventor<br/>
+                                        Excel
+                                    </p>
+                               </dd>
+
+                               <dd class="clear"></dd>
+                               
+                               <dt>Áhugamál</dt>
+                               <dd>
+                                   <p style="text-align: center;">
+                                        3D prentun<br/>
+                                        Hlaup<br/>
+                                        Útivist
+                                    </p>
+                               </dd>
+                               
+                           </dl>
+                           
+                           <div class="clear"></div>
+                       
+                       </div>
+                   
+                   </body>
+                </article>
+            </div>
+
+
+            </div>
+            <!-- \Main -->
+
+        	<!-- Footer -->
+            <!-- Texti neðst á síðunni -->
+                <div id="footer">
+                    <ul class="copyright">
+                        <li>Dagur Óskarsson &copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+            <!-- \Footer -->
+
+		    <!-- Scripts -->
+            <!-- scripts fyrir síðuna -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/browser.min.js"></script>
+                <script src="assets/js/breakpoints.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <script src="assets/js/main.js"></script>
+            <!-- \Scripts -->
+
+    </body>
+
+</html>
